@@ -18,12 +18,12 @@ def multiply(**kwargs):
     for key, value in kwargs.items():
         # iterate over the dictionary values
         for j in value:
-            # only expect integer values from command line, use float otherwise
+            # only expects integer values from command line, use float otherwise
             total *= int(j)
     print(total)
 
 
 # call multiply with kwargs set to a list from index 1 onwards
-# index 0 is the files name
+# index 0 is the file's name
 if __name__ == '__main__':
     multiply(kwargs=sys.argv[1:])
